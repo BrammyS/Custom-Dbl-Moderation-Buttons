@@ -25,7 +25,7 @@
     addButton("NSFW command in SFW", "Your COMMANDNAME has NSFW content in it. Please lock this command to NSFW channels only.");
     addButton("Public eval", "Your bot has an open eval command. Please lock this command for developers only.");
     addButton("Rainbow roles", "Your bot supports rainbow roles. This is API abuse and not allowed on Discord, please remove this feature entirely.");
-    addButton("Presence change spam", "Your bots presence changes every few seconds which is considered API abuse, Please limit the amount of times your bot changes it's status to a more reasonable amount, for example every 120 seconds.");
+    addButton("Presence change spam", "Your bot's presence changes every few seconds which is considered API abuse, please limit the amount of times your bot changes it's status to a more reasonable amount, for example every 120 seconds.");
     addButton("%50+ commands not working", "More than 50% of your commands listed on your bots page/help command do not provide a response.");
 
     function addButton(buttonName, reason) {
