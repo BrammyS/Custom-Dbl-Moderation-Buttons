@@ -20,7 +20,7 @@
     addButton("Mentions nsfw", "Your bot mentions NSFW in the long description.");
     addButton("UrbanDic in non-NSFW", "Your Urban Dictionary command can be used in non-NSFW channels.");
     addButton("NSFW reddit search", "Your Reddit command can be used to search NSFW images in non NSFW channels.");
-    addButton("Loli command", "Your COMMANDNAME command provides explicit images of Lolis, Please make sure that Lolis are not included because this is against Discord's Terms of Service.");
+    addButton("Loli command", "Your COMMANDNAME command provides explicit images of lolis, Please make sure that these images are not included in your bot as it is against Discord's Terms of Service to have them.");
     addButton("Copy/Paste widgets", "You are using the widgets of another bot in your long description. Please you your own widgets.");
     addButton("NSFW command in SFW", "Your COMMANDNAME has NSFW content in it. Please lock this command to NSFW only channels.");
     addButton("Public eval", "Your bot has an open eval command. Please lock this command for developers only.");
