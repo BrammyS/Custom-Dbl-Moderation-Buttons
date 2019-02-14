@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DBL decline buttons
 // @namespace    http://tampermonkey.net/
-// @version      1.3
+// @version      2.0
 // @description  Making my life less painful.
 // @author       BrammyS
 // @match        https://discordbots.org/moderation/decline*
@@ -11,7 +11,6 @@
 // ==/UserScript==
 
 (function () {
-    console.log("loaded");
     var label = document.createElement("LABEL");
     var field = document.getElementsByClassName("field")[0]
     var labelText = document.createTextNode("Custom decline reasons");
@@ -19,7 +18,7 @@
     label.className += "label";
     field.insertBefore(label, field.childNodes[25]);
 
-    addButton("Mentions NSFW", "Your bot mentions NSFW in the long description.");
+    addButton("Mentions NSFW", "Your bot mentions NSFW in the long description. Please remove any mentioning of NSFW features in your name and description.");
     addButton("< 300 words", "Your long description doesn't meet the 300 minimum word requirement.");
     addButton("UrbanDic in non-NSFW", "Your Urban Dictionary command can be used in non-NSFW channels.");
     addButton("NSFW reddit search", "Your Reddit command can be used to search NSFW images in non NSFW channels.");
