@@ -7,6 +7,7 @@
 // @match        https://discordbots.org/moderation/decline*
 // @grant        none
 // @updateURL    https://github.com/BramEsendam/Custom-Dbl-Moderation-Buttons/raw/master/CustomDeclineButtons.user.js
+// @downloadURL  https://github.com/BramEsendam/Custom-Dbl-Moderation-Buttons/raw/master/CustomDeclineButtons.user.js
 // ==/UserScript==
 
 (function () {
