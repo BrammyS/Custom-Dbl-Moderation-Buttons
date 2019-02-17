@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DBL decline buttons
 // @namespace    http://tampermonkey.net/
-// @version      2.0
+// @version      2.1
 // @description  Making my life less painful.
 // @author       BrammyS
 // @match        https://discordbots.org/moderation/decline*
@@ -25,6 +25,7 @@
     addButton("Loli command", "Your COMMANDNAME command provides explicit images of lolis, Please make sure that these images are not included in your bot as it is against Discord's Terms of Service to have them.");
     addButton("Copy/Paste widgets", "You are using the widgets of another bot in your long description. Please use your own widgets.");
     addButton("NSFW command in SFW", "Your COMMANDNAME has NSFW content in it. Please lock this command to NSFW channels only.");
+    addButton("Reboot cmd in dms", "Your bot can be rebooted by anyone through Direct Messages.");
     addButton("Owner commands dm", "Your bot has owner commands which can be used by anyone via DMs.");
     addButton("Long description copy-paste", "Your bot's long description is a copy-paste from another bot.");
     addButton("Public eval", "Your bot has an open eval command. Please lock this command for developers only.");
