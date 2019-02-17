@@ -19,7 +19,7 @@
     field.insertBefore(label, field.childNodes[25]);
 
     addButton("Mentions NSFW", "Your bot mentions NSFW in the long description. Please remove any mentioning of NSFW features in your name and description.");
-    addButton("< 300 words", "Your long description doesn't meet the 300 minimum word requirement.");
+    addButton("< 300 character ", "Your long description doesn't meet the 300 minimum character requirement.");
     addButton("UrbanDic in non-NSFW", "Your Urban Dictionary command can be used in non-NSFW channels.");
     addButton("NSFW reddit search", "Your Reddit command can be used to search NSFW images in non NSFW channels.");
     addButton("Loli command", "Your COMMANDNAME command provides explicit images of lolis, Please make sure that these images are not included in your bot as it is against Discord's Terms of Service to have them.");
