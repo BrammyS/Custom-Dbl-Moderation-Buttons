@@ -32,6 +32,8 @@
     addButton("Rainbow roles", "Your bot supports rainbow roles. This is API abuse and not allowed on Discord, please remove this feature entirely.");
     addButton("Presence change spam", "Your bot's presence changes every few seconds which is considered API abuse, please limit the amount of times your bot changes it's status to a more reasonable amount, for example every 120 seconds.");
     addButton("%50+ commands not working", "More than 50% of your commands listed on your bots page/help command do not provide a response.");
+    addButton("Non-restricted DM reboot command", "Your bot has an owner command that can be used in Direct messages. (reboot). Please restrict this to bot owners only.");
+    addButton("Spam command", "Your bot has a command which causes it to spam either a text channel or a user's DMs.");
 
     function addButton(buttonName, reason) {
         var button = document.createElement("A");
