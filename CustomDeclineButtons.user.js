@@ -23,8 +23,9 @@
 
     for (i = 0; i < vanillaButtons.length; i++) {
         console.log("lol:", vanillaButtons[i].onclick);
+        let cOnclick = vanillaButtons[i].onclick;
         vanillaButtons[i].onclick = function () {
-            vanillaButtons[i].onclick();
+            cOnclick();
             document.getElementsByName("declinereason")[0].focus();
         }
     }
