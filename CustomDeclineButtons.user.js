@@ -34,7 +34,7 @@
     addButton("< 300 character ", "Your long description doesn't meet the 300 minimum character requirement.");
     addButton("UrbanDic in non-NSFW", "Your Urban Dictionary command can be used in non-NSFW channels.");
     addButton("NSFW reddit search", "Your Reddit command can be used to search NSFW images in non NSFW channels.");
-    addButton("Loli command", "Your COMMANDNAME command provides explicit images of lolis, Please make sure that these images are not included in your bot as it is against Discord's Terms of Service to have them.");
+    addPromptedButton("Loli command", "Your ~input command provides explicit images of lolis, Please make sure that these images are not included in your bot as it is against Discord's Terms of Service to have them.", "Enter infringing command's name");
     addButton("Copy/Paste widgets", "You are using the widgets of another bot in your long description. Please use your own widgets.");
     addButton("NSFW command in SFW", "Your COMMANDNAME has NSFW content in it. Please lock this command to NSFW channels only.");
     addButton("Reboot cmd in dms", "Your bot can be rebooted by anyone through Direct Messages.");
@@ -44,8 +44,9 @@
     addButton("Rainbow roles", "Your bot supports rainbow roles. This is API abuse and not allowed on Discord, please remove this feature entirely.");
     addButton("Presence change spam", "Your bot's presence changes every few seconds which is considered API abuse, please limit the amount of times your bot changes it's status to a more reasonable amount, for example every 120 seconds.");
     addButton("%50+ commands not working", "More than 50% of your commands listed on your bots page/help command do not provide a response.");
-    addButton("Reboot cmd in dm's", "Your bot has an owner command that can be used in Direct messages. (reboot). Please restrict this to bot owners only.");
-    addButton("Spam command", "Your bot has a command which causes it to spam either a text channel or a user's DMs.");
+    addPromptedButton("DM open owner command", "Your bot's owner-only \"~input\" command can be used in DMs by anybody. Please restrict this to bot owners only.", "Enter infringing command's name");
+    addPromptedButton("Spam command", "Your bot has a command (~input) which causes it to spam either a text channel or a user's DMs.", "Enter infringing command's name");
+    addPromptedButton("API Abuse", "Your bot abuses the Discord API.", "Enter sentence explaining abuse");
 
     function addButton(buttonName, reason) {
         var button = document.createElement("A");
@@ -59,6 +60,22 @@
         };
         field.insertBefore(button, field.childNodes[26]);
     }
+
+    function addPromptedButton(buttonName, reason, promptText) {
+        var button = document.createElement("A");
+        var buttonText = document.createTextNode(buttonName);
+        button.appendChild(buttonText);
+        button.className += "predefined-Reason";
+        button.onclick = function () {
+            var declineBox = document.getElementsByName("declinereason")[0]
+            var input = prompt(promptText);
+            reason = reason.replace("~input", input);
+            declineBox.value = reason;
+            declineBox.focus();
+        };
+        field.insertBefore(button, field.childNodes[26]);
+    }
+
 }
 
 )();
