@@ -48,6 +48,7 @@
     addPromptedButton("Spam command", "Your bot has a command (~input) which causes it to spam either a text channel or a user's DMs.", "Enter infringing command's name");
     addPromptedBUtton("API Abuse", "Your bot abuses the Discord API.", "Enter sentence explaining abuse");
 
+
     function addButton(buttonName, reason) {
         var button = document.createElement("A");
         var buttonText = document.createTextNode(buttonName);
