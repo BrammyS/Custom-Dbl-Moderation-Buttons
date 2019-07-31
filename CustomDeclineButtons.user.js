@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DBL decline buttons
 // @namespace    http://tampermonkey.net/
-// @version      2.2
+// @version      3.0
 // @description  Making my life less painful.
 // @author       BrammyS (best mod (o wait))
 // @match        https://discordbots.org/moderation/decline*
@@ -46,7 +46,8 @@
     addButton("%50+ commands not working", "More than 50% of your commands listed on your bots page/help command do not provide a response.");
     addPromptedButton("DM open owner command", "Your bot's owner-only \"~input\" command can be used in DMs by anybody. Please restrict this to bot owners only.", "Enter infringing command's name");
     addPromptedButton("Spam command", "Your bot has a command (~input) which causes it to spam either a text channel or a user's DMs.", "Enter infringing command's name");
-    addPromptedButton("API Abuse", "Your bot abuses the Discord API.", "Enter sentence explaining abuse");
+    addPromptedBUtton("API Abuse", "Your bot abuses the Discord API.", "Enter sentence explaining abuse");
+
 
     function addButton(buttonName, reason) {
         var button = document.createElement("A");
