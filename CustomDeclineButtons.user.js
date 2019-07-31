@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DBL decline buttons
 // @namespace    http://tampermonkey.net/
-// @version      2.2
+// @version      3.0
 // @description  Making my life less painful.
 // @author       BrammyS (best mod (o wait))
 // @match        https://discordbots.org/moderation/decline*
